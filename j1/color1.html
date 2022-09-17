@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 20px 100px;
+        }h1{
+            text-align: center;
+            text-decoration: underline;
+        }img{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }p{
+            font-size: 18px;
+            text-align:justify;
+        }.btn{
+            width:20px;
+            height: 20px;
+            display: inline-block;
+            border: solid grey;
+            border-radius: 50%;
+            cursor: pointer;
+        }#white{
+background-color: white;
+        }#aqua{
+background-color: aquamarine;
+        }#violet{
+         background-color: #ce9aff;
+        }#black{
+         background-color: black;
+        }#color-switcher{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')" ></span>
+        <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+        <span class="btn" id="viotet" onclick="changeBG('#ce9aff')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+    <h1 class="text">About Us</h1>
+    <!-- <img src="https://res.cloudinary.com/highereducation/images/v1631898316/ComputerScience.org/GettyImages-1180183927/GettyImages-1180183927.jpg?_i=AA alt=""> -->
+    <img src="img\IMG-20200925-WA0012.jpg" alt="">
+   <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi aspernatur asperiores eaque fugit ducimus cumque, tempore voluptates nihil nobis sint consectetur minus repudiandae blanditiis deleniti assumenda. Magni quod eligendi illo optio atque quo aliquid pariatur totam cum. Tempora iure corrupti earum vitae perferendis quidem vero nam consectetur illo, voluptates quod nostrum aut omnis dolore nobis numquam consequuntur cumque quia aspernatur quisquam nulla! Nisi, quas maxime. Aut assumenda recusandae, temporibus tempora beatae tempore quis repudiandae dolor odit sequi, maxime fuga consequuntur! Quidem eligendi molestias itaque, quas explicabo, hic corporis quibusdam maxime quaerat in aperiam tenetur quisquam repellat odio nulla sed ea repudiandae ad esse tempore qui! Facilis tempore, unde ipsam quo doloremque ratione quasi voluptates veritatis dolorem soluta necessitatibus rem fuga nihil, earum doloribus animi cupiditate in, excepturi impedit aspernatur voluptate accusamus! Ipsum aspernatur eveniet corporis enim quisquam alias est repellat, aliquam beatae aperiam, ducimus, quo accusamus assumenda consectetur consequatur ea. Et maiores odit rerum repellat? Animi, quam! Omnis assumenda totam illo odit voluptatem incidunt aliquam. Consequuntur iste asperiores cumque non voluptates porro ut eius omnis esse fugit nam quo, eum velit, eligendi ipsam facilis doloremque et hic. Iste porro nisi perspiciatis numquam quisquam vitae adipisci dolores repellendus beatae, debitis pariatur!</p>
+   <script>
+    function changeBG(color){
+        document.body.style.backgroundColor = color;
+        let txt = document.getElementsByClassName("text")
+        if (color == "#000000"){
+               for(let elm of txt){
+                elm.style.color = "white";
+               }
+        }else{
+            for(let elm of txt){
+                elm.style.color = "black";
+            }
+        }
+    }
+   </script>
+</body>
+</html>

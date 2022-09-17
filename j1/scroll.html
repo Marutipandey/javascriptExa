@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 1000;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="ho">
+    </form>
+<script>
+    let x = document.getElementById("ho");
+
+    x.addEventListener('focus',myfocus);
+    x.addEventListener('blur',myblur);
+//x.addEventListener('change',function(){
+    x.addEventListener('input',function(){
+
+    console.log(this.value);
+})
+    function myfocus(){
+        x.style.background = "yellow";
+    }
+
+    function myblur(){
+        x.style.background = "white";
+    }
+</script>
+</body>
+</html>

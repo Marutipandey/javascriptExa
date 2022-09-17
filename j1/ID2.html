@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="intro">
+        <p id="p1">this is a p tag</p>
+    </div>
+    <script>
+        let elm = document.getElementById("intro");
+        let lm = document.createElement("h1");
+        // let text = document.createTextNode("ooooooo pppp qqq");
+        //lm.appendChild(text);
+
+        lm.id="intro1";
+        lm.className ="try pi";
+         
+        lm.textContent ="content page";
+         let pra = document.getElementById("p1");
+        console.log(pra.textContent);
+                
+
+        //elm.appendChild(lm);
+        document.body.appendChild(lm);
+    </script>
+</body>
+</html>

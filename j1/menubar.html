@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #header{
+            text-align: center;
+        }#logo{
+            width: 250px;
+            height: auto;
+        }#menu-bar{
+            text-align: center;
+            background-color: cadetblue;
+        }#menu-bar li{
+            display: inline-block;
+            padding: 15px 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }#container{
+            text-align: center;
+            padding: 50px 100px;
+             
+        }#about-img{
+            width: 100%;
+        }.sticky{
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Vanamo_Logo.svg/2048px-Vanamo_Logo.svg.png" id="logo" alt="">
+    </div>
+    <nav id="menu-bar">
+        <li>Home</li>
+        <li>About us</li>
+        <li>Our team</li>
+        <li>Client</li>
+        <li>Contact us</li>
+    </nav>
+    <div id="container">
+        <h1>About us</h1>
+        <img src="img\IMG-20200925-WA0012.jpg" id="logo" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem cupiditate veniam consequatur
+            deserunt accusantium temporibus itaque soluta, adipisci quo. Ipsam amet odit architecto, ea nobis libero,
+            sint ad dignissimos doloremque similique doloribus dolorum accusantium maxime quidem commodi ut veritatis
+            animi dolores necessitatibus et! Cumque veniam hic optio, earum laudantium perferendis eligendi, sunt quasi,
+            aliquid esse fuga iste? Eos inventore veritatis doloribus. Impedit nisi odio tempora dignissimos error
+            excepturi modi delectus saepe, quaerat corrupti atque voluptatem ea cumque, explicabo accusamus doloribus
+            dicta aut mollitia rerum. Itaque aliquam temporibus minima impedit non alias expedita ex fuga, asperiores
+            praesentium, harum cum! Laborum eveniet nesciunt facere vero eum, reprehenderit sed dicta dignissimos illo
+            magnam natus voluptas eius culpa eligendi praesentium fuga ad quis, sapiente cum omnis sunt blanditiis! Quo,
+            autem, quod nemo modi esse eos rem saepe tempora molestiae qui, illum consectetur accusantium nostrum magnam
+            sunt? Sit excepturi at reprehenderit vel odio voluptatibus esse iusto, sapiente nisi corrupti sed placeat id
+            nam maxime qui totam enim, dolor a voluptas expedita nihil consequuntur. Obcaecati dolore non ad accusantium
+            dignissimos at autem similique. Provident, fugiat ab mollitia odit ipsum amet laborum quo placeat autem
+            dicta commodi quidem unde dolorum soluta doloremque assumenda corrupti maiores error voluptas ipsa ducimus
+            est, tempore rem. Velit fugit vitae delectus magni sint, dolorem dolorum maiores dolore eos id impedit
+            inventore, consequuntur tempore dolores, laudantium consectetur? Eum quo nihil consectetur reprehenderit
+            quaerat sint fuga tempore ex soluta a asperiores expedita temporibus sunt impedit molestias, rerum maiores
+            quae pariatur? Quo beatae sit hic maiores soluta voluptate pariatur distinctio saepe similique fugit
+            asperiores earum, dolorem vero ab. Voluptates cumque cupiditate nisi architecto minima quisquam harum
+            excepturi quos voluptatibus magni, enim exercitationem corporis qui provident sed, inventore ipsam dolorem
+            ipsa tempora, eligendi nesciunt similique ex rerum? Sunt, voluptates quam! Illo animi provident magni itaque
+            omnis harum, facilis aliquid blanditiis, hic accusantium velit repellendus, amet laudantium dicta tempora
+            rem quaerat sunt. Accusamus consequuntur rem quaerat beatae error dignissimos ex laboriosam ipsam aperiam
+            atque commodi magni quo enim veritatis nam dolorem itaque doloribus expedita natus consequatur, velit
+            repellat dolorum et neque? Beatae voluptas minus laborum maxime nam odio totam rerum consequatur doloribus
+            delectus, molestiae quidem natus labore aperiam maiores accusantium eligendi incidunt nisi ipsa dicta
+            temporibus ratione qui? Facilis animi porro adipisci quaerat fuga vero in dolorum autem deserunt laborum
+            maxime officiis debitis obcaecati nemo quia harum, temporibus aperiam rem quasi. Cupiditate cum inventore
+            ut! Deserunt incidunt ratione maxime quas facilis iusto suscipit esse earum doloremque culpa id, nesciunt
+            numquam, dolores, voluptas modi exercitationem ea odit alias cupiditate. Beatae modi, omnis, aperiam natus
+            dolores labore obcaecati quidem exercitationem, nam sequi tempore dolorem eos libero expedita delectus
+            incidunt consequuntur porro voluptate. Quas consectetur eaque modi exercitationem cum atque ipsam corporis
+            voluptatum sapiente illo suscipit pariatur debitis voluptate, similique possimus eos neque deleniti?
+            Deleniti, at facilis quisquam rerum, expedita et minus commodi architecto facere cupiditate, delectus
+            numquam voluptas. Dolore nihil dicta possimus fugit rem at dignissimos, tenetur assumenda illum aperiam
+            magnam id hic ea blanditiis officiis aut vitae harum?</p>
+    </div>
+    <script>
+        window.addEventListener('scroll',function(){
+        let navbar = document.getElementById("menu-bar");
+        if(window.pageYOffset >= 254){
+         navbar.classList.add('sticky');
+      }else{
+            navbar.classList.remove('sticky');
+        }
+        });
+    </script>
+</body>
+
+</html>
